@@ -1,0 +1,15 @@
+type: object
+required:
+  - messageId
+  - text
+  - userId
+  - timestamp
+properties:
+  messageId:
+    $ref: '#/components/schemas/MessageID'
+  text:
+    type: string
+  userId:
+    $ref: '#/components/schemas/UserID'
+  timestamp:
+    type: string

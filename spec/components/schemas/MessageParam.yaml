@@ -1,0 +1,9 @@
+type: object
+required:
+  - messageId
+  - text
+properties:
+  messageId:
+    $ref: '#/components/schemas/MessageID'
+  text:
+    type: string

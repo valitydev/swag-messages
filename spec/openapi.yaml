@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: RBKmoney Messages API
+  description: Messages API
+servers:
+  - url: 'https://{subdomain}.rbk.money/messages/{version}'
+    variables:
+      subdomain:
+        default: api
+      version:
+        enum:
+          - v1
+        default: v1
+security:
+  - APIKey: []

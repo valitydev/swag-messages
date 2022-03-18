@@ -1,0 +1,4 @@
+name: conversationStatus
+in: query
+schema:
+  $ref: '#/components/schemas/ConversationStatus'

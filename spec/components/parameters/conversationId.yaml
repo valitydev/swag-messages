@@ -1,0 +1,7 @@
+name: conversationId
+in: query
+required: true
+schema:
+  type: array
+  items:
+    $ref: '#/components/schemas/ConversationID'

@@ -1,0 +1,11 @@
+type: object
+required:
+  - conversationId
+  - messages
+properties:
+  conversationId:
+    $ref: '#/components/schemas/ConversationID'
+  messages:
+    type: array
+    items:
+      $ref: '#/components/schemas/MessageParam'

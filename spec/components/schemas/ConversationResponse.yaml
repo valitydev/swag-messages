@@ -1,0 +1,20 @@
+type: object
+required:
+  - conversations
+  - users
+properties:
+  conversations:
+    type: array
+    items:
+      $ref: '#/components/schemas/Conversation'
+  users:
+    type: object
+    additionalProperties:
+      type: object
+      properties:
+        userId:
+          type: object
+          $ref: '#/components/schemas/UserID'
+        user:
+          type: object
+          $ref: '#/components/schemas/User'

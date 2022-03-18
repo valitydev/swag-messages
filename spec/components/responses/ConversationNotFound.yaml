@@ -1,0 +1,5 @@
+description: Комментарии не найдены
+content:
+  application/json:
+    schema:
+      $ref: '#/components/schemas/GeneralError'

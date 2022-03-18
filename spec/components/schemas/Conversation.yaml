@@ -1,0 +1,14 @@
+type: object
+required:
+  - conversationId
+  - messages
+  - status
+properties:
+  conversationId:
+    $ref: '#/components/schemas/ConversationID'
+  messages:
+    type: array
+    items:
+      $ref: '#/components/schemas/Message'
+  status:
+    $ref: '#/components/schemas/ConversationStatus'

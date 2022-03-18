@@ -1,0 +1,30 @@
+get:
+  tags:
+    - Conversations
+  operationId: getConversations
+  parameters:
+    - $ref: '#/components/parameters/conversationId'
+    - $ref: '#/components/parameters/conversationStatus'
+  responses:
+    '200':
+      description: Комментарии
+      $ref: '#/components/responses/ConversationResponse'
+    '401':
+      $ref: '#/components/responses/AccessForbidden'
+    '404':
+      $ref: '#/components/responses/ConversationNotFound'
+post:
+  tags:
+    - Conversations
+  operationId: saveConversations
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/SaveConversationParams'
+    required: true
+  responses:
+    '200':
+      description: Комментарии сохранены
+    '401':
+      $ref: '#/components/responses/AccessForbidden'
